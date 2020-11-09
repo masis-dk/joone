@@ -9,23 +9,15 @@ module.exports = {
 
     return config
   },
-  /*async exportPathMap() {
+  async exportPathMap() {
     // Dynamic routes for /user/:id
-    const products = await fetch('http://localhost:8080/products', {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    });
+    const products = await fetch('http://localhost:8080/products');
     const productsResponse = await products.json();
-
-    console.log('%cproductsResponse', 'color: red;', productsResponse);
-
-    const productsURL = productsResponse.reduce(
+    console.log('%cproductResponse', 'color: lime;', productsResponse);
+    const productsURL = productsResponse.products.reduce(
       (base, current) => (Object.assign({}, base, {
-        [ `/products/${current.id}` ]: {
-          page: '/products/[id]',
+        [ `/product/${current.id}` ]: {
+          page: '/product/[id]',
           query: { id: current.id },
         }
       })), {}
@@ -35,7 +27,6 @@ module.exports = {
 
     return Object.assign( {}, productsURL, {
       '/': { page: '/' },
-      '/products': { page: '/products' },
     } );
-  }*/
+  }
 };

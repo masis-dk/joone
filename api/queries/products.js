@@ -31,7 +31,7 @@ function getProductById(req, res) {
  * @param res
  */
 function getAllProducts(req, res) {
-  let limit = req.query.limit.toString() || LIMIT_OF_PRODUCTS;
+  let limit = req && req.query && req.query.limit && req.query.limit.toString() || LIMIT_OF_PRODUCTS;
   limit = Number(limit) > Number(LIMIT_OF_PRODUCTS) ? LIMIT_OF_PRODUCTS : limit;
 
   fetch(`${baseURL}/products.json?limit=${limit}&fields=${fields}`, {
