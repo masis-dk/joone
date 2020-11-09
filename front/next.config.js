@@ -13,7 +13,7 @@ module.exports = {
     // Dynamic routes for /user/:id
     const products = await fetch('http://localhost:8080/products');
     const productsResponse = await products.json();
-    console.log('%cproductResponse', 'color: lime;', productsResponse);
+
     const productsURL = productsResponse.products.reduce(
       (base, current) => (Object.assign({}, base, {
         [ `/product/${current.id}` ]: {
