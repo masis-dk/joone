@@ -8,8 +8,12 @@
 - create a file `.env` in api folder, and set your credentials
 
 ### Commands to run project:
-- in the folder api: `node server.js`
-- in the folder front: `npm run dev`
+- in the folder api:
+  - npm install 
+  - `node server.js`
+- in the folder front:
+  - npm install 
+  - `npm run dev`
 
 ### API:
 - build with Node JS and express JS
