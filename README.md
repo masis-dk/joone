@@ -1,6 +1,6 @@
 # joone
 
-# Before starting the project you need to set 2 environment variables
+## Before starting the project you need to set 2 environment variables
 - API_KEY : api key
 - ACCESS_TOKEN : password
 
