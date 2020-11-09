@@ -1,0 +1,10 @@
+/* global styles */
+@import "./styles/global-styles.css";
+
+/* pages */
+@import "./styles/index.css";
+@import "./styles/single-product.css";
+
+/* component */
+@import "components/ListItem/ListItem.css";
+@import "components/Button/Button.css";

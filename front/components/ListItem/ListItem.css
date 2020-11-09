@@ -1,0 +1,79 @@
+.c-products-list-img.c-products-list__item {
+  cursor          : pointer;
+  flex-basis      : 40%;
+  width           : 40%;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : space-between;
+  align-items     : center;
+  margin-bottom   : 50px;
+}
+
+.c-products-list__item div.e-product-link {
+  width           : 100%;
+  height          : 100%;
+  display         : flex;
+  flex-basis      : 100%;
+  overflow        : hidden;
+  flex-direction  : column;
+  justify-content : space-between;
+  transition      : .3s ease-in-out;
+  padding-bottom  : 10px;
+  box-shadow      : 0 0 3px rgba(0, 0, 0, .3);
+}
+
+.c-products-list__item div.e-product-link:hover {
+  transition : .3s ease-in-out;
+  box-shadow : 0 0 5px rgba(0, 0, 0, .5);
+}
+
+.c-products-list-img {
+  width: 20%;
+  flex-basis: 20%;
+}
+
+.c-products-list-img .e-product {
+  width: 100%;
+}
+
+.c-products-list-img .e-product img {
+  display: block;
+  width : 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.e-product-variant .e-product img {
+}
+
+.c-products-list__item img {
+  display    : block;
+  width      : 100%;
+  height     : 100%;
+  transition : .3s ease-in-out;
+  object-fit : contain;
+}
+
+.c-products-list__item div.e-product-img {
+  overflow : hidden;
+  height   : 100%;
+}
+
+.c-products-list__item div.e-product-img:hover img {
+  transform  : scale(1.02);
+  transition : .3s ease-in-out;
+}
+
+.e-product-btn {
+  border-top : 1px solid rgba(0, 0, 0, .1);
+}
+
+.e-product-title {
+  width         : 100%;
+  text-align    : center;
+  margin        : 10px auto 10px;
+  padding       : 10px 30px;
+  text-overflow : ellipsis;
+  white-space   : nowrap;
+  overflow      : hidden;
+}
